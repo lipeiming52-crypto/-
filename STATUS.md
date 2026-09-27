@@ -15,3 +15,34 @@
 | 无真实用户数据与密钥入库 | 待最终复查 | 仅使用标记为虚构的样例；提交前再查 Git 跟踪列表 |
 
 明日第一优先级：先处理任何一台无法 clone/install/dev 的问题，再推进 Day 02 访谈。不要把单机启动记为三机 PASS。
+
+## Day 01 后续核验（2026-09-27）
+
+A 已从远程仓库独立克隆，完成 `npm ci`、开发服务首页与 `/api/health` 访问及类型检查；启动记录和截图见 [Day 01 PR #1](https://github.com/lipeiming52-crypto/-/pull/1)。这些只证明 A 的电脑可启动。B/C 独立启动、PostgreSQL 和非作者 Review 仍待完成；PR #1 未合并，main 保护也未启用。
+
+## Day 02｜用户问题验证（A，2026-09-28）
+
+当前 Gate：**FAIL / 缺真实访谈与团队对齐**。
+
+| 项目 | 状态 | 证据 / 下一步 |
+| --- | --- | --- |
+| 招募、同意、六个开放问题 | 文档完成 | [访谈提纲](docs/research/interview-guide.md)；尚未实际招募 |
+| 匿名真实原话 | 0 条 | [清洗记录](docs/research/interviews-clean.md) 的 S01/S02 明确为虚构演练，不计样本 |
+| H1–H4 与反例 | 计划完成、实证未验证 | [假设表](docs/research/hypotheses.md) 保留未知和反例条件 |
+| B/C 交接 | A 的文件完成、对方未签收 | [字段需求](docs/research/field-needs-for-b.md)、[措辞风险](docs/research/question-risks-for-c.md) |
+| 主旅程 | 低保真草图完成 | [流程草图](docs/ux/low-fi-flow.md)，尚无真实用户测试 |
+
+不能声称 Day 02 “用户问题已验证”。下一优先级：真实招募与访谈；请 B/C 审核字段和诱导风险。
+
+## Day 03｜MVP 范围（A，2026-09-28）
+
+当前 Gate：**FAIL / A 提案已备，三方 Scope Freeze 和 P0 实测未完成**。
+
+| 项目 | 状态 | 证据 / 下一步 |
+| --- | --- | --- |
+| 用户问题、主流程、P0/P1/P2、可见完成标准 | A 提案完成 | [PRODUCT.md](PRODUCT.md)；基于待验证假设，待访谈后修订 |
+| 延期与不做清单 | A 提案完成 | [NOT_DOING.md](NOT_DOING.md) |
+| P0 现场演示脚本 | 验收剧本完成、功能未实现 | [演示剧本](docs/ux/day03-demo-script.md)；不能记录为 PASS |
+| B 架构/容量、C AI 范围、三方评审 | 待实际队友完成 | 不代签；B/C 结论回来后再冻结范围 |
+
+本分支仅增加 A 的文档和状态记录，无 Migration、Contract、Prompt 或 Eval 运行规则改动。提交前复查敏感信息；合并后仍需在 main 复跑检查与三机同步。
