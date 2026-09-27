@@ -12,7 +12,7 @@
 ## 从零启动 Web（Windows PowerShell）
 
 ```powershell
-git clone <团队仓库地址>
+git clone https://github.com/lipeiming52-crypto/-.git resume-platform
 cd resume-platform
 node --version
 npm --version
