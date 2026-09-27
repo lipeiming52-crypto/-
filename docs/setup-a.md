@@ -39,7 +39,7 @@
 | 原本没有 B 的仓库与 README | 用户授权先建立共同底座；README、锁文件、环境模板已推送 GitHub `main` | B 核对仓库与版本方案 |
 | 普通沙箱访问 npm 官方仓库被拒绝 | 在允许网络的环境中完成官方模板与锁定依赖安装；全新克隆成功 | B/C 按 README 复跑 |
 | VS Code / Docker 未检出 | 前端可独立启动；数据库未验收，不记为 PASS | B 决定并验证 PostgreSQL 方案 |
-| GitHub 账户授权已完成 | `main` 已推送并可远程克隆；A 草稿 PR 已创建，非作者 Review 待完成 | B/C Review |
+| GitHub 账户授权已完成 | `main` 已推送并可远程克隆；A 的 PR 已开放 Review，非作者批准待完成 | B/C Review |
 | main 保护规则未启用 | 自动审批拒绝了长期改变仓库保护设置的操作，要求对具体规则取得明确授权；未尝试绕过 | 仓库所有者 |
 
 ## 待团队验收
@@ -49,7 +49,7 @@
 - [ ] 设置 main 保护（需明确批准具体规则）。
 - [ ] B/C 各自在自己的电脑从同一远程地址完成 clone → install → dev。
 - [ ] B 验证本地 PostgreSQL 运行；C Review `docs/ai/BOUNDARIES.md` 文案。
-- [x] 本记录和截图已通过 [草稿 PR #1](https://github.com/lipeiming52-crypto/-/pull/1) 提交。
+- [x] 本记录和截图已通过 [PR #1](https://github.com/lipeiming52-crypto/-/pull/1) 提交，并标为可 Review。
 - [ ] 非作者 Review 后再合并 PR。
 
 团队 Day 01 Gate 应继续记为 **FAIL / 未验收**，直到三机均可独立启动。
