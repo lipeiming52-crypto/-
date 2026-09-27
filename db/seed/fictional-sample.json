@@ -1,0 +1,9 @@
+{
+  "synthetic": true,
+  "purpose": "Day 01 开发占位样例；尚无数据库导入脚本",
+  "experience": {
+    "rawInput": "我在虚构校园活动中负责签到，具体人数不记得了。",
+    "confirmedFacts": ["负责活动签到"],
+    "unknowns": ["参与人数"]
+  }
+}
