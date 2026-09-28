@@ -46,3 +46,7 @@ A 已从远程仓库独立克隆，完成 `npm ci`、开发服务首页与 `/api
 | B 架构/容量、C AI 范围、三方评审 | 待实际队友完成 | 不代签；B/C 结论回来后再冻结范围 |
 
 本分支仅增加 A 的文档和状态记录，无 Migration、Contract、Prompt 或 Eval 运行规则改动。提交前复查敏感信息；合并后仍需在 main 复跑检查与三机同步。
+
+## 2026-09-28 交接复查
+
+已补 [Day 01–03 交接索引](docs/day01-03-handoff.md)、[单场访谈空白模板](docs/research/interview-record-template.md) 和 [B/C 范围评审清单](docs/ux/scope-review-checklist.md)。GitHub 实时核对时，PR #1/#2 均仍开放且未合并，尚无可归属到非作者的有效 Review；队友写权限邀请仍待接受。上述条件与真实访谈缺口未消除，因此 Day 01–03 团队 Gate 均维持 **FAIL / 待验收**。此节是当日快照，后续以 PR 和实际记录为准。
