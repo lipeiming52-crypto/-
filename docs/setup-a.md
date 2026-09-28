@@ -44,6 +44,8 @@
 
 ## 待团队验收
 
+2026-09-28 补充：Review PR #4 时发现，干净安装后立即执行 `npm run typecheck` 会因首页布局使用尚未生成的 `LayoutProps<"/">` 而失败。A 已改用显式的 `ReactNode` 类型，并在全新克隆中依次验证 `npm ci`、`npm run typecheck`、`npm run build`、`npm run lint` 均通过。该修复随 PR #1 交付。
+
 - [x] 将 `main` 发布到三人共用的 GitHub 仓库。
 - [x] A 从 GitHub 远程地址再次克隆、安装、启动。
 - [ ] 设置 main 保护（需明确批准具体规则）。
