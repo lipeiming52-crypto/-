@@ -50,3 +50,17 @@ A 已从远程仓库独立克隆，完成 `npm ci`、开发服务首页与 `/api
 ## 2026-09-28 交接复查
 
 已补 [Day 01–03 交接索引](docs/day01-03-handoff.md)、[单场访谈空白模板](docs/research/interview-record-template.md) 和 [B/C 范围评审清单](docs/ux/scope-review-checklist.md)。GitHub 实时核对时，PR #1/#2 均仍开放且未合并，尚无可归属到非作者的有效 Review；队友写权限邀请仍待接受。上述条件与真实访谈缺口未消除，因此 Day 01–03 团队 Gate 均维持 **FAIL / 待验收**。此节是当日快照，后续以 PR 和实际记录为准。
+
+## Day 04–06｜A 的前端演练（2026-09-28）
+
+已实现 `/try/poc` 与 `/try/prototype`，并提供 [专业提示词](docs/prompts/day03-06-guidance.md)、[虚构 Mock](mocks/experience.json)、[PoC 结果](docs/poc/results.md)、[字段审查](docs/contracts/frontend-field-review.md)、[真实用户测试计划](docs/ux/day06-test-plan.md) 和 [UI 问题卡](docs/ux/day06-ui-issues.md)。浏览器自测覆盖 Mock 保存、超时不丢输入、接口缺失、事实人工确认、夸大句排除、导出预览与 AI 失败提示；具体证据见上述文档及截图。
+
+本分支 `npm run typecheck`、`npm run lint`、`npm run build` 均通过；[内部自测记录](docs/ux/day06-internal-qa.md) 区分了已验证的前端行为与未验证的真实用户体验。
+
+| 天数 | A 当前状态 | 团队 Gate / 尚缺证据 |
+| --- | --- | --- |
+| Day 04 | A 的页面和 Mock 演练完成 | **FAIL**：B 的 `/api/v1/poc`、PostgreSQL 单表读写、C 的模型 JSON/Zod/费用记录尚未实际连通 |
+| Day 05 | A 虚构 Mock、字段/空态审查完成 | **FAIL**：B 共享 Zod/API/SQL Contract 与 C 输出样例未交付；Mock 尚不能证明符合共享 Schema，三方未冻结 |
+| Day 06 | A 可点击原型和测试脚本完成 | **FAIL**：真实目标用户测试 0/2–3；B/C 未审字段、措辞和 Eval，不能宣称用户可识别夸大 |
+
+下一优先级：先收 B/C 对 Day 03–05 契约与范围的评审，再运行真实访谈及 2–3 人原型测试；所有新增结论必须带实际证据。Day 04–06 分支从 Day 02–03 分支派生，后续 PR 需按依赖顺序 Review/合并。

@@ -1,0 +1,39 @@
+{
+  "record_kind": "synthetic_a_mock",
+  "contract_status": "awaiting_b_shared_schema",
+  "experience_id": "exp-demo-001",
+  "scene": "course_project",
+  "source_answer": {
+    "id": "answer-demo-001",
+    "text": "我在一门课的小组项目里清理了问卷数据，做了两张图给大家汇报。最后分数是整个小组拿的，具体多少分我不记得。"
+  },
+  "facts": [
+    {
+      "id": "fact-demo-001",
+      "source_answer_ids": ["answer-demo-001"],
+      "text": "清理问卷数据",
+      "status": "candidate",
+      "ownership": "personal",
+      "risk_flags": []
+    },
+    {
+      "id": "fact-demo-002",
+      "source_answer_ids": ["answer-demo-001"],
+      "text": "制作两张图用于小组汇报",
+      "status": "candidate",
+      "ownership": "personal",
+      "risk_flags": []
+    },
+    {
+      "id": "fact-demo-003",
+      "source_answer_ids": ["answer-demo-001"],
+      "text": "小组获得课程成绩，具体分数未知",
+      "status": "candidate",
+      "ownership": "team",
+      "risk_flags": ["team_result", "unknown_result"]
+    }
+  ],
+  "target": "数据分析实习",
+  "unsafe_candidate": "主导课程项目并取得高分",
+  "ui_error_examples": ["POC_TIMEOUT", "POC_UNAVAILABLE", "INPUT_REQUIRED"]
+}
