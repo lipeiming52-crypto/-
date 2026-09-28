@@ -26,6 +26,8 @@
 
 ## 延期，不阻断 P0
 
+Requirement Parser 只是辅助抽取；解析失败、模型不可用或用户跳过时，用户仍可手动输入或编辑目标并继续 P0 流程。
+
 RAG、LangGraph、Vector Memory、Multi-Agent 均不属于首发核心。知识库增强、向量检索、图编排或多 Agent 只有在核心事实到导出闭环通过验收且另行评审后才考虑。
 
 ## 危险样本与质量门
