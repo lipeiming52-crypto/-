@@ -68,3 +68,5 @@ git status --short
 启动开发服务后访问 `/try/poc`（提交、模拟超时、错误码和接口占位）以及 `/try/prototype`（入口到导出的可点击原型）。原型只保留当前页面内存状态，刷新会丢失；不要输入敏感材料。它使用 [虚构 Mock](mocks/experience.json)，尚未接上 B 的数据库/API 和 C 的模型，也未通过真实用户测试。
 
 A 的 [PoC 实测](docs/poc/results.md)、[前端字段审查](docs/contracts/frontend-field-review.md)、[内部自测](docs/ux/day06-internal-qa.md)、[用户测试计划](docs/ux/day06-test-plan.md) 与 [专业执行提示词](docs/prompts/day03-06-guidance.md) 记录了可复现路径和待对齐问题。共享 Schema 与三方 Scope Freeze 完成之前，不能把这些演练文档当作团队验收通过。
+
+Day 07–09 A 的 `/try/workspace` 经历/问答/事实工作页及 [交接记录](docs/ux/day07-09-a-handoff.md) 补齐空白、异常、刷新恢复与来源风险演练；目前只用浏览器标签页存储虚构草稿，尚未接入 B/C 正式接口。

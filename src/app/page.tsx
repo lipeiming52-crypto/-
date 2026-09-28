@@ -6,7 +6,7 @@ export default function Home() {
       <div className="mx-auto max-w-5xl">
         <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 pb-5">
           <p className="text-sm font-bold tracking-wide text-teal-900">留学生履历赋能平台</p>
-          <span className="rounded-full border border-slate-300 px-3 py-1 text-xs font-semibold text-slate-600">A · Day 04–06 演练</span>
+          <span className="rounded-full border border-slate-300 px-3 py-1 text-xs font-semibold text-slate-600">A · Day 04–09 演练</span>
         </div>
         <section className="grid gap-8 py-14 sm:py-20 lg:grid-cols-[1.25fr_0.75fr] lg:items-end">
           <div>
@@ -21,6 +21,11 @@ export default function Home() {
           </div>
         </section>
         <div className="grid gap-4 md:grid-cols-2">
+          <Link href="/try/workspace" className="group rounded-3xl border border-teal-200 bg-teal-50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md sm:p-8">
+            <p className="text-xs font-bold tracking-[0.18em] text-teal-700">DAY 07–09 / 经历与事实</p>
+            <h2 className="mt-3 text-2xl font-semibold">打开前端工作页 <span aria-hidden="true" className="inline-block transition group-hover:translate-x-1">↗</span></h2>
+            <p className="mt-3 text-sm leading-7 text-slate-600">选择场景、逐题回忆、刷新恢复演练，再对照原话核实每条候选事实。包含空白、保存失败、版本冲突和四类风险提示。</p>
+          </Link>
           <Link href="/try/prototype" className="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md sm:p-8">
             <p className="text-xs font-bold tracking-[0.18em] text-teal-700">DAY 06 / 完整路径</p>
             <h2 className="mt-3 text-2xl font-semibold">体验可点击原型 <span aria-hidden="true" className="inline-block transition group-hover:translate-x-1">↗</span></h2>
@@ -32,7 +37,7 @@ export default function Home() {
             <p className="mt-3 text-sm leading-7 text-slate-600">对比模拟保存、模拟超时和实际接口反馈，查看 request_id、错误码与耗时。</p>
           </Link>
         </div>
-        <p className="mt-8 text-xs leading-6 text-slate-500">Web 服务：运行中。此页面只证明前端可访问；不代表团队 Day 01–06 Gate 已通过。</p>
+        <p className="mt-8 text-xs leading-6 text-slate-500">Web 服务：运行中。此页面只证明前端可访问；不代表团队 Day 01–09 Gate 已通过。</p>
       </div>
     </main>
   );
