@@ -64,3 +64,15 @@ A 已从远程仓库独立克隆，完成 `npm ci`、开发服务首页与 `/api
 | Day 06 | A 可点击原型和测试脚本完成 | **FAIL**：真实目标用户测试 0/2–3；B/C 未审字段、措辞和 Eval，不能宣称用户可识别夸大 |
 
 下一优先级：先收 B/C 对 Day 03–05 契约与范围的评审，再运行真实访谈及 2–3 人原型测试；所有新增结论必须带实际证据。Day 04–06 分支从 Day 02–03 分支派生，后续 PR 需按依赖顺序 Review/合并。
+
+## Day 07–09｜A 的前端工作页（2026-09-29）
+
+新增 `/try/workspace` 和 [A 交接/浏览器自测记录](docs/ux/day07-09-a-handoff.md)。A 可用虚构样例检查场景选择、逐题问答、空白/加载/保存失败/冲突状态、标签页刷新恢复、原话与事实对照、四类风险提示和原话修改后旧确认失效。`npm run typecheck`、`npm run lint`、`npm run build` 通过。本分支包含 PR #1 已提交但尚未进入本分支祖先的布局类型修复，以支持干净安装后立即类型检查。
+
+| 天数 | A 当前状态 | 团队 Gate / 明日第一优先级 |
+| --- | --- | --- |
+| Day 07 | 前端状态与异常路径演练完成 | **FAIL**：真实用户失败点 0、B Migration 未验收、C approved 双审未完成；先收真实测试与 B/C 交付 |
+| Day 08 | Experience/Guide 前端完成，浏览器标签页恢复已测 | **FAIL**：B 保存/读取 API 未到位，真实 API 替换 0；先接保存与 owner/version |
+| Day 09 | Fact Review 前端与风险演练完成 | **FAIL**：B Fact API/source/version、C Extractor/Validator/Eval 未到位；先验来源与确认状态机 |
+
+未把虚构样例、浏览器存储或 A 的关键词规则记为团队 PASS。后续 PR 依赖 Day 04–06 A 分支；需非作者 Review、按依赖顺序合并并在 main 重跑。
