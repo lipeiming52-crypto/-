@@ -1,6 +1,6 @@
 # 留学生履历赋能平台
 
-这是三人共用的 Day 01 开发基线。当前仅包含可访问的首页、Web 健康接口、锁定依赖、本地 PostgreSQL 启动方案和协作文档；产品功能尚未开始。
+这是三人共用的 Day 01 开发基线，并附 A 的 Day 04–06 前端演练页面。Web 健康接口、锁定依赖和本地 PostgreSQL 启动方案已准备；正式数据库、AI 与产品功能尚未接入。
 
 ## 统一版本
 
@@ -62,3 +62,9 @@ git status --short
 - `docs/setup-a.md`：A 的本机启动记录。
 
 本仓库的 Day 01 状态见 [`STATUS.md`](STATUS.md)。
+
+## Day 04–06 的 A 侧演练入口
+
+启动开发服务后访问 `/try/poc`（提交、模拟超时、错误码和接口占位）以及 `/try/prototype`（入口到导出的可点击原型）。原型只保留当前页面内存状态，刷新会丢失；不要输入敏感材料。它使用 [虚构 Mock](mocks/experience.json)，尚未接上 B 的数据库/API 和 C 的模型，也未通过真实用户测试。
+
+A 的 [PoC 实测](docs/poc/results.md)、[前端字段审查](docs/contracts/frontend-field-review.md)、[内部自测](docs/ux/day06-internal-qa.md)、[用户测试计划](docs/ux/day06-test-plan.md) 与 [专业执行提示词](docs/prompts/day03-06-guidance.md) 记录了可复现路径和待对齐问题。共享 Schema 与三方 Scope Freeze 完成之前，不能把这些演练文档当作团队验收通过。
